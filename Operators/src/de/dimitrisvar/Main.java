@@ -59,5 +59,49 @@ public class Main {
         result -=  2; // 10  - 2 = 8
         System.out.println("10 - 2 = " +result);
 
+        // The if-then statement is the most basic of all the control flow statements. It tells
+        // your program to execute a certain section of code only if a particular test evaluates
+        // to true. Known as conditional logic. Conditional logic uses specific statements in Java
+        // to allow us to check a condition and execute certain code based on whatever that condition
+        // (the expression) is true or false.
+
+        boolean isAlien = false;
+        if(isAlien == false) {
+            System.out.println("He is not an alien!");
+        }
+
+        int topScore = 80;
+        if (topScore < 100) {
+            System.out.println("You got the high score!");
+        }
+
+        int secondTopScore = 60;
+        if(topScore > secondTopScore && topScore < 100) {
+            System.out.println("Greater than second top score and less than 100");
+        }
+
+        if((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("Either or both of the conditions are true");
+        }
+
+        // Assignment operator (=) equal operator (==)
+        int newValue = 50;
+        if(newValue == 50) {
+            System.out.println("This is true");
+        }
+
+        boolean isCar = false;
+        if(isCar) {
+            System.out.println("This is not supposed to happen");
+        }
+
+        // Ternary Operator ?  The ternary operator is a shortcut to assigning one of two values
+        // to a variable depending on a given condition.
+        // It's a shortcut of the if-then-else statement
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if(wasCar) {
+            System.out.println("wasCar is true");
+        }
     }
 }
